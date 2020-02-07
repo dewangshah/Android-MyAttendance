@@ -8,4 +8,4 @@ package and made a desktop Application using Java in NetBeans
 Tracking system for monitoring student attendance in colleges using wireless fingerprint scanner (Realtime RS10); 
 Built SQL database for verification with override options provided access to app for individual users
 
-![Flowchart](www.googledrive.com/host/1wfuj8Es6QnJVNS5zZl3DZfjd5idLrSF8)
+![Flowchart](https://www.googledrive.com/host/1wfuj8Es6QnJVNS5zZl3DZfjd5idLrSF8)
