@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_id"
+            android:title="Home"
+            android:icon="@drawable/home"
+            ></item>
+        <item
+            android:id="@+id/notifications_id"
+            android:title="Notifications"
+            android:icon="@drawable/notifications"
+            ></item>
+
+    </group>
+
+    <item android:title="Settings"
+        android:icon="@drawable/settings">
+        <menu>
+            <item
+                android:id="@+id/send_query_id"
+                android:title="Send Query"
+                android:icon="@drawable/send_query"
+                ></item>
+
+            <item
+                android:id="@+id/about_us_id"
+                android:title="About us"
+                android:icon="@drawable/about_us"
+                ></item>
+            <item
+                android:id="@+id/logout_id"
+                android:title="Logout"
+                android:icon="@drawable/logout"
+                ></item>
+        </menu>
+    </item>
+
+
+
+</menu>

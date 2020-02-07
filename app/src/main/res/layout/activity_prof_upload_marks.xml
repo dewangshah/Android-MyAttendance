@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_prof_upload_marks"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dewang.myattendance.ProfUploadMarks">
+
+    <Spinner
+        android:id="@+id/spnclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spnid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnclass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnid"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvStudName" />
+
+    <TextView
+        android:id="@+id/tvPDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvStudName"
+        android:layout_marginTop="60dp"
+        android:text="PDS:" />
+
+    <TextView
+        android:id="@+id/tvHMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvPDS"
+        android:layout_marginTop="33dp"
+        android:text="HMI" />
+
+    <TextView
+        android:id="@+id/tvML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvHMI"
+        android:layout_marginTop="37dp"
+        android:text="ML" />
+
+    <TextView
+        android:id="@+id/tvDWM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvML"
+        android:layout_marginTop="40dp"
+        android:text="DWM" />
+
+    <EditText
+        android:id="@+id/etPDSMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Marks"
+        android:layout_alignBaseline="@+id/tvPDS"
+        android:layout_alignBottom="@+id/tvPDS"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etHMIMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Marks"
+        android:layout_alignBaseline="@+id/tvHMI"
+        android:layout_alignBottom="@+id/tvHMI"
+        android:layout_alignLeft="@+id/etPDSMarks"
+        android:layout_alignStart="@+id/etPDSMarks" />
+
+    <EditText
+        android:id="@+id/etMLMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Marks"
+        android:layout_alignBaseline="@+id/tvML"
+        android:layout_alignBottom="@+id/tvML"
+        android:layout_alignLeft="@+id/etHMIMarks"
+        android:layout_alignStart="@+id/etHMIMarks" />
+
+    <EditText
+        android:id="@+id/etDWMMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Marks"
+        android:layout_alignBaseline="@+id/tvDWM"
+        android:layout_alignBottom="@+id/tvDWM"
+        android:layout_alignLeft="@+id/etMLMarks"
+        android:layout_alignStart="@+id/etMLMarks" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Upload" />
+</RelativeLayout>

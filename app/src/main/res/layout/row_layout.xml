@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <TextView
+        android:id="@+id/tx_id"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="Dewang"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tx_name"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/tx_id"
+        android:gravity="center"
+        android:text="Dewang"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tx_agg"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/tx_name"
+        android:gravity="center"
+        android:text="Dewang"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+</RelativeLayout>

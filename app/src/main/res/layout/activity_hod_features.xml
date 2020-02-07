@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dewang.myattendance.HodFeatures">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="210dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/beach" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="140dp"
+                android:src="@drawable/default_profile"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:textColor="#ffffff"
+                android:textSize="22dp" />
+        </FrameLayout>
+
+        <TextView
+            android:drawableLeft="@drawable/navigationmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNavigation"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frameLayout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameLayout">
+
+                <LinearLayout
+                    android:id="@+id/LinLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHODID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="ID:"
+                        android:textColor="@color/title_color"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="--------"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvHODViewStudAttendance"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LinLayout"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/rounded"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Student Attendance"
+                    android:textAlignment="center"
+                    android:textColor="@color/detailed_attendance" />
+
+                <TextView
+                    android:id="@+id/tvHODViewDefaulters"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvHODViewStudAttendance"
+                    android:layout_alignBottom="@+id/tvHODViewStudAttendance"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded2"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Defaulters"
+                    android:textColor="#388e3c" />
+
+                <TextView
+                    android:id="@+id/tvHODEditDatabase"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvHODViewStudAttendance"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded3"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Edit Database"
+                    android:textColor="#f57f17" />
+
+                <TextView
+                    android:id="@+id/tvHODDeptProf"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvHODEditDatabase"
+                    android:layout_alignBottom="@+id/tvHODEditDatabase"
+                    android:layout_alignLeft="@+id/tvHODViewDefaulters"
+                    android:layout_alignStart="@+id/tvHODViewDefaulters"
+                    android:background="@drawable/rounded1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Dept Professors"
+                    android:textColor="@color/materialRed" />
+
+                <TextView
+                    android:id="@+id/tvHODNotif"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvHODEditDatabase"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Send Notification"
+                    android:textColor="#6a1b9a" />
+
+                <TextView
+                    android:id="@+id/tvHODViewMarks"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvHODNotif"
+                    android:layout_alignBottom="@+id/tvHODNotif"
+                    android:layout_alignLeft="@+id/tvHODDeptProf"
+                    android:layout_alignStart="@+id/tvHODDeptProf"
+                    android:background="@drawable/rounded5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Student Marks"
+                    android:textColor="#6d4c41" />
+
+                <TextView
+                    android:id="@+id/tvHODStats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvHODNotif"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Statistics:"
+                    android:textColor="@color/title_color"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tvHODStats"
+                    android:layout_marginTop="10dp"
+                    android:background="#26a69a"
+                    android:text="This Part is an Under Progress."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_drawer_header"
+        app:menu="@menu/drawer_menu"></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

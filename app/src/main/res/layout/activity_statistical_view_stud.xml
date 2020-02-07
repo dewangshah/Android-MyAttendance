@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_statistical_view_stud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.dewang.myattendance.StatisticalViewStud">
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartLecs"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"></com.github.mikephil.charting.charts.BarChart>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/barChartLecs"
+            android:text="* Dark Shades specify the total Lectures Conducted "
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tvDWM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="20dp"
+            android:text="DWM:"
+            android:textStyle="bold" />
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/pvDWM"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvDWM"
+            android:layout_marginTop="10dp"
+            app:cpv_barColor="@color/red"
+            app:cpv_barColor1="@color/orange"
+            app:cpv_barColor2="@color/blue"
+            app:cpv_barColor3="@color/green"
+            app:cpv_maxValue="100"
+            app:cpv_showUnit="true"
+            app:cpv_textSize="30dp"
+            app:cpv_unit="%"
+            app:cpv_unitSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvHMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pvHMI"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="HMI:"
+            android:textStyle="bold" />
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/pvHMI"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/pvDWM"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvDWM"
+            android:layout_toRightOf="@+id/tvHMI"
+            app:cpv_barColor="@color/red"
+            app:cpv_barColor1="@color/green"
+            app:cpv_maxValue="100"
+            app:cpv_showUnit="true"
+            app:cpv_textSize="30dp"
+            app:cpv_unit="%"
+            app:cpv_unitSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvPDS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pvDWM"
+            android:layout_marginTop="15dp"
+            android:text="PDS:"
+            android:textStyle="bold" />
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/pvPDS"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvPDS"
+            android:layout_marginTop="7dp"
+            app:cpv_barColor="@color/red"
+            app:cpv_barColor1="@color/orange"
+            app:cpv_barColor2="@color/blue"
+            app:cpv_barColor3="@color/green"
+            app:cpv_maxValue="100"
+            app:cpv_showUnit="true"
+            app:cpv_textSize="30dp"
+            app:cpv_unit="%"
+            app:cpv_unitSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pvPDS"
+            android:layout_alignLeft="@+id/tvHMI"
+            android:layout_alignStart="@+id/tvHMI"
+            android:text="ML:"
+            android:textStyle="bold" />
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/pvML"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/pvHMI"
+            android:layout_alignStart="@+id/pvHMI"
+            android:layout_alignTop="@+id/pvPDS"
+            app:cpv_barColor="@color/red"
+            app:cpv_barColor1="@color/green"
+            app:cpv_maxValue="100"
+            app:cpv_showUnit="true"
+            app:cpv_textSize="30dp"
+            app:cpv_unit="%"
+            app:cpv_unitSize="17dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

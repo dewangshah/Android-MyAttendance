@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/logOut"
+        android:orderInCategory="300"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/chgPwd"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/changeDP"
+        android:orderInCategory="200"
+        android:title="Change Display Picture"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Attendance</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_defaulter_list">DefaulterList</string>
+    <string name="title_activity_send_notifications">SendNotifications</string>
+</resources>

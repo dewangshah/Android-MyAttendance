@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dewang.myattendance.HodLogin">
+
+    <Button
+        android:id="@+id/btnHodLogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/button_round"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOD Login"
+        android:textColor="#4c565f"
+        android:textSize="29dp"
+        android:gravity="center"
+        android:layout_below="@+id/ivHOD"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etHodPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:background="#0000"
+        android:drawableLeft="@drawable/pass"
+        android:drawablePadding="12dp"
+        android:gravity="left"
+        android:hint="Password"
+        android:maxLength="12"
+        android:padding="12dp"
+        android:textSize="16dp"
+
+        android:inputType="textPassword"
+        android:layout_below="@+id/ethodUserName"
+        android:layout_alignLeft="@+id/ethodUserName"
+        android:layout_alignStart="@+id/ethodUserName" />
+
+    <CheckBox
+        android:layout_weight="2"
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:checked="false"
+        android:buttonTint="@color/colorhint"
+        android:textColor="@color/colorhint"
+        android:textSize="11dp"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@id/btnHodLogin"
+        android:layout_alignLeft="@id/btnHodLogin"
+        android:layout_alignStart="@id/btnHodLogin" />
+
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/teacherbg"
+        android:id="@+id/ivHOD"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/ethodUserName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="12dp"
+        android:gravity="left"
+        android:hint="Username"
+        android:maxLength="15"
+        android:padding="12dp"
+        android:textSize="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+

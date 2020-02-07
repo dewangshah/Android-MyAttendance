@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dewang.myattendance.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnHOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="#96ceb4"
+            android:text="HOD"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btnProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnHOD"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffeead"
+            android:text="Professor"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btnStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnProf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="#fe8181"
+            android:text="Student"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvMission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnStudent"
+            android:layout_marginTop="30dp"
+            android:text="Our Mission"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMissionStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMission"
+            android:layout_marginTop="10dp"
+            android:text="To impart high quality Technical Education to students by providing excellent academic environment, well equipped laboratories and training through motivated teachers."
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvVision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMissionStatement"
+            android:layout_marginTop="20dp"
+            android:text="Our Vision"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVisionStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvVision"
+            android:layout_marginTop="20dp"
+            android:text="To become autonomous and achieve the objective of becoming a world class
+academic institution by utilizing academic freedom to improve educational quality and professional standards."
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

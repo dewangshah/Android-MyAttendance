@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dewang.myattendance.StudentProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+
+            <!-- Cover Image -->
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/beach" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="130dp"
+                android:src="@drawable/default_profile"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="John Doe's Attendance"
+                android:textColor="#ffffff"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tvAgg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="75dp"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="70dp"
+                android:text="%"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/navigationmenu" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/frameLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvDWM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="DWM" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/pvDWM"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvDWM"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    app:cpv_barColor="@color/red"
+                    app:cpv_barColor1="@color/orange"
+                    app:cpv_barColor2="@color/blue"
+                    app:cpv_barColor3="@color/green"
+                    app:cpv_maxValue="100"
+                    app:cpv_showUnit="true"
+                    app:cpv_textSize="30dp"
+                    app:cpv_unit="%"
+                    app:cpv_unitSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tvHMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_toRightOf="@id/tvDWM"
+                    android:text="HMI" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/pvHMI"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignTop="@+id/pvDWM"
+                    android:layout_toEndOf="@+id/tvHMI"
+                    android:layout_toRightOf="@+id/tvHMI"
+                    app:cpv_barColor="@color/red"
+                    app:cpv_barColor1="@color/green"
+                    app:cpv_maxValue="100"
+                    app:cpv_showUnit="true"
+                    app:cpv_textSize="30dp"
+                    app:cpv_unit="%"
+                    app:cpv_unitSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tvPDS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/pvDWM"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="PDS" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/pvPDS"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/tvPDS"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    app:cpv_barColor="@color/red"
+                    app:cpv_barColor1="@color/green"
+                    app:cpv_maxValue="100"
+                    app:cpv_showUnit="true"
+                    app:cpv_textSize="30dp"
+                    app:cpv_unit="%"
+                    app:cpv_unitSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tvML"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvHMI"
+                    android:layout_alignStart="@+id/tvHMI"
+                    android:layout_below="@id/pvHMI"
+                    android:layout_marginTop="15dp"
+                    android:text="ML" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/pvML"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignLeft="@+id/pvHMI"
+                    android:layout_alignStart="@+id/pvHMI"
+                    android:layout_alignTop="@+id/pvPDS"
+                    app:cpv_barColor="@color/red"
+                    app:cpv_barColor1="@color/green"
+                    app:cpv_maxValue="100"
+                    app:cpv_showUnit="true"
+                    app:cpv_textSize="30dp"
+                    app:cpv_unit="%"
+                    app:cpv_unitSize="17dp" />
+
+                <TextView
+                    android:id="@+id/idScrollDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pvPDS"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Scroll Down to See the Stats" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChartLecs"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@id/idScrollDown"
+                    android:layout_marginTop="20dp"></com.github.mikephil.charting.charts.BarChart>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_drawer_header"
+        app:menu="@menu/drawer_menu"></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
